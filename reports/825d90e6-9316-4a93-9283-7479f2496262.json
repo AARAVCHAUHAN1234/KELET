@@ -1,0 +1,104 @@
+{
+  "question": "hello",
+  "executed_at": "demo",
+  "sources": [
+    {
+      "title": "Sample Academic Paper",
+      "url": "https://example.com/paper1",
+      "authors": [
+        "Doe, J."
+      ],
+      "year": 2023,
+      "type": "paper"
+    },
+    {
+      "title": "News Article on Topic",
+      "url": "https://example.com/news",
+      "authors": [
+        "Smith, A."
+      ],
+      "year": 2024,
+      "type": "news"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "The global AI market will exceed $500B by 2025.",
+      "evidence_source": {
+        "title": "Sample Academic Paper",
+        "url": "https://example.com/paper1",
+        "authors": [
+          "Doe, J."
+        ],
+        "year": 2023,
+        "type": "paper"
+      },
+      "type": "numerical"
+    },
+    {
+      "claim": "OpenAI released GPT‑4 in March 2023.",
+      "evidence_source": {
+        "title": "News Article on Topic",
+        "url": "https://example.com/news",
+        "authors": [
+          "Smith, A."
+        ],
+        "year": 2024,
+        "type": "news"
+      },
+      "type": "fact"
+    }
+  ],
+  "verification": [
+    {
+      "claim": "The global AI market will exceed $500B by 2025.",
+      "status": "Supported",
+      "explanation": "Demo verification marks this as supported.",
+      "sources": [
+        {
+          "title": "Sample Academic Paper",
+          "url": "https://example.com/paper1",
+          "authors": [
+            "Doe, J."
+          ],
+          "year": 2023,
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "claim": "OpenAI released GPT‑4 in March 2023.",
+      "status": "Partially Supported",
+      "explanation": "Demo verification marks this as partially supported.",
+      "sources": [
+        {
+          "title": "News Article on Topic",
+          "url": "https://example.com/news",
+          "authors": [
+            "Smith, A."
+          ],
+          "year": 2024,
+          "type": "news"
+        }
+      ]
+    }
+  ],
+  "contradictions": [],
+  "bias_analysis": [
+    {
+      "aspect": "Commercial bias",
+      "description": "No commercial bias detected in the demo sources."
+    },
+    {
+      "aspect": "Geographic bias",
+      "description": "Sources span multiple regions; no dominant geographic bias."
+    }
+  ],
+  "redteam_findings": [
+    {
+      "challenge": "Potential over‑reliance on a single academic source in the mock data.",
+      "suggestion": "Seek additional peer‑reviewed studies to corroborate the claim."
+    }
+  ],
+  "summary": "Demo report generated from deterministic mock agents."
+}
